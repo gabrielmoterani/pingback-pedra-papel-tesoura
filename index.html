@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedra Papel e Tesoura</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <nav>
+        <h1>Pedra, Papel e Tesoura</h1>
+    </nav>
+    <section class="banner">
+        <div id="play" class="play">
+            <button onclick="play()">Jogar!</button>
+        </div>
+
+
+        <div id="select" class="select">
+            <div class="choose">
+                <select name="player1" id="player1">
+                    <option value="pedra">Pedra</option>
+                    <option value="papel">Papel</option>
+                    <option value="tesoura">Tesoura</option>
+                </select>
+                <select name="player2" id="player2">
+                    <option value="pedra">Pedra</option>
+                    <option value="papel">Papel</option>
+                    <option value="tesoura">Tesoura</option>
+                </select>
+            </div>
+            <button onclick="checkResult()">Selecionar</button>
+        </div>
+
+        <div id="result" class="result">
+            <h2 id="result-text">Player X Ganhou!</h2>
+            <button onclick="play()">Jogar de novo!</button>
+        </div>
+
+
+    </section>
+    <script src="./index.js"></script>
+</body>
+</html>
